@@ -1,0 +1,223 @@
+.hero-header-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url('/images/hero-background.svg');
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-header-logoContainer {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  z-index: 100;
+}
+
+.hero-header-navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bfbebe66;
+  opacity: 0.9;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+
+.hero-header-navigation ul {
+  list-style: none;
+  padding: 0 15px;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-header-navigation ul li {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0;
+}
+
+.hero-header-navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 15px;
+  display: block;
+  position: relative;
+  margin: 0;
+  transform: skewX(-20deg);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-header-navLinkText {
+  display: block;
+  position: relative;
+  z-index: 2;
+  transform: skewX(20deg);
+}
+
+.hero-header-navigation ul li:nth-child(odd) a {
+  background-color: #ffffff00;
+}
+
+.hero-header-navigation ul li:nth-child(even) a {
+  background-color: #d9d9d9c3;
+}
+
+.hero-header-navigation ul li a:hover,
+.hero-header-navigation ul li a:focus {
+  background-color: #0066cc7e;
+  color: #ffffff;
+  z-index: 2;
+}
+
+/* --- ESTILOS MOBILE SIMPLIFICADOS --- */
+
+.hero-header-mobileMenuButton {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.hero-header-hamburgerLine {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Animação do Hambúrguer para X */
+.hero-header-mobileMenuButton.menu-open
+  .hero-header-hamburgerLine:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hero-header-mobileMenuButton.menu-open
+  .hero-header-hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.hero-header-mobileMenuButton.menu-open
+  .hero-header-hamburgerLine:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Painel do Menu Mobile */
+.hero-header-mobileNavPanel {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(
+    20,
+    20,
+    30,
+    0.97
+  );
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+  animation: fadeInPanel 0.3s ease-out forwards;
+}
+
+@keyframes fadeInPanel {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-header-mobileNavPanel nav {
+  width: 100%;
+}
+
+.hero-header-mobileNavPanel nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.hero-header-mobileNavPanel nav ul li {
+  width: 80%;
+  max-width: 300px;
+}
+
+.hero-header-mobileNavPanel nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-header-mobileNavPanel nav ul li a:hover,
+.hero-header-mobileNavPanel nav ul li a:focus {
+  background-color: #0072c6;
+  color: #ffffff;
+}
+
+/* Media Query para Mobile e tablet */
+@media (max-width: 1023px) {
+  .hero-header-section {
+    background-position: center top;
+  }
+
+  .hero-header-desktopNav {
+    display: none;
+  }
+
+  .hero-header-mobileMenuButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 22px;
+    right: 20px;
+  }
+
+  .hero-header-logoContainer {
+    left: 20px;
+    top: 20px;
+  }
+}
