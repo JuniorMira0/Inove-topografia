@@ -5,6 +5,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'i9 Topografia - Soluções em Topografia',
   description: 'Serviços especializados em topografia para seus projetos.',
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({
