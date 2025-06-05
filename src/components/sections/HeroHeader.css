@@ -3,7 +3,7 @@
   width: 100%;
   position: relative;
   background-color: #ffffff;
-  background-image: url('/images/hero-background.svg');
+  background-image: url('/images/hero-background.webp');
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -236,7 +236,7 @@
 
 @media (max-width: 1023px) {
   .hero-header-section {
-    background-position: 85%;
+    background-image: url('/images/hero-background-mobile.webp');
   }
 
   .hero-header-desktopNav {
