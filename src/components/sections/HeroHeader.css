@@ -2,6 +2,7 @@
   height: 100svh;
   width: 100%;
   position: relative;
+  background-color: #ffffff;
   background-image: url('/images/hero-background.svg');
   background-size: cover;
   background-position: center;
@@ -102,24 +103,6 @@
   font-weight: 500;
   margin-bottom: 10px;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero-header-ctaButton {
-  display: inline-block;
-  padding: 12px 20px;
-  background-color: #0072c6;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.hero-header-ctaButton:hover,
-.hero-header-ctaButton:focus {
-  background-color: #005baa;
-  color: #ffffff;
 }
 
 .hero-header-scrollIndicator {
@@ -253,7 +236,7 @@
 
 @media (max-width: 1023px) {
   .hero-header-section {
-    background-position: 82%;
+    background-position: 85%;
   }
 
   .hero-header-desktopNav {
@@ -284,11 +267,6 @@
   .hero-header-mainTitle {
     font-size: 1.8rem;
     margin-bottom: 10px;
-  }
-
-  .hero-header-ctaButton {
-    padding: 10px 25px;
-    font-size: 0.9rem;
   }
 
   .hero-header-scrollIndicator {

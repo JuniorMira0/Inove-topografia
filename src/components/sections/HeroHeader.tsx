@@ -62,9 +62,6 @@ export default function HeroHeader() {
         <h1 className="hero-header-mainTitle">
           Soluções Inteligentes em Topografia
         </h1>
-        <Link href="#sobre" className="hero-header-ctaButton">
-          Saiba Mais
-        </Link>
       </div>
 
       {isMobileMenuOpen && (
@@ -84,7 +81,11 @@ export default function HeroHeader() {
       )}
 
       <div className="hero-header-scrollIndicator">
-        <Link href="#sobre" className="hero-header-scrollLink" aria-label="Rolar para próxima seção">
+        <Link
+          href="#sobre"
+          className="hero-header-scrollLink"
+          aria-label="Rolar para próxima seção"
+        >
           <span>&darr;</span>
         </Link>
       </div>
