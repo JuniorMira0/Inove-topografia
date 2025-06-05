@@ -5,7 +5,7 @@ import Link from 'next/link';
 import './HeroHeader.css';
 
 const navLinks = [
-  { href: '#sobre-nos', label: 'Sobre Nós' },
+  { href: '#sobre', label: 'Sobre Nós' },
   { href: '#servicos', label: 'Serviços' },
   { href: '#equipes', label: 'Equipes' },
   { href: '#obras', label: 'Obras' },
@@ -46,15 +46,26 @@ export default function HeroHeader() {
       </nav>
 
       <button
-        className={`hero-header-mobileMenuButton ${isMobileMenuOpen ? 'menu-open' : ''}`}
+        className={`hero-header-mobileMenuButton ${
+          isMobileMenuOpen ? 'menu-open' : ''
+        }`}
         onClick={toggleMobileMenu}
-        aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+        aria-label={isMobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
         aria-expanded={isMobileMenuOpen}
       >
         <span className="hero-header-hamburgerLine"></span>
         <span className="hero-header-hamburgerLine"></span>
         <span className="hero-header-hamburgerLine"></span>
       </button>
+
+      <div className="hero-header-content">
+        <h1 className="hero-header-mainTitle">
+          Soluções Inteligentes em Topografia
+        </h1>
+        <Link href="#sobre" className="hero-header-ctaButton">
+          Saiba Mais
+        </Link>
+      </div>
 
       {isMobileMenuOpen && (
         <div className="hero-header-mobileNavPanel">
@@ -71,6 +82,12 @@ export default function HeroHeader() {
           </nav>
         </div>
       )}
+
+      <div className="hero-header-scrollIndicator">
+        <Link href="#sobre" className="hero-header-scrollLink" aria-label="Rolar para próxima seção">
+          <span>&darr;</span>
+        </Link>
+      </div>
     </section>
   );
 }
