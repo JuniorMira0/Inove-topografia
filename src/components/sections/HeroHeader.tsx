@@ -27,7 +27,7 @@ export default function HeroHeader() {
             src="/images/Logo-header.png"
             alt="Logo i9 Topografia"
             width={256}
-            height={75}
+            height={77}
             priority
           />
         </Link>
