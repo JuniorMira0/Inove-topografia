@@ -154,4 +154,9 @@
         -webkit-line-clamp: unset;
         max-height: none;
     }
+    
+    .works-carousel .swiper-button-next,
+    .works-carousel .swiper-button-prev {
+    display: none;
+  }
 }
