@@ -7,8 +7,8 @@ import './HeroHeader.css';
 const navLinks = [
   { href: '#sobre', label: 'Sobre Nós' },
   { href: '#servicos', label: 'Serviços' },
-  { href: '#equipes', label: 'Equipes' },
   { href: '#obras', label: 'Obras' },
+  { href: '#diferenciais', label: 'Diferenciais' },
   { href: '#contato', label: 'Contato' },
 ];
 
