@@ -1,6 +1,6 @@
 .works-section {
     min-height: 100vh;
-    padding: 60px 0;
+    padding: 10px 0;
     background-color: #121212d1;
     color: #ffffff;
     display: flex;
@@ -89,7 +89,7 @@
 }
 
 .works-carousel {
-    padding-bottom: 50px !important;
+    padding-bottom: 40px !important;
 }
 
 .works-carousel .swiper-slide {
