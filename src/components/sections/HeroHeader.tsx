@@ -43,9 +43,11 @@ const mobileBackgroundImages = [
     src: '/images/hero-background-mobile.webp',
     alt: 'Topógrafo trabalhando visto de perto',
   },
-  { src: '/images/hero-background-mobile-2.webp', alt: 'Detalhe de um drone em operação' },
+  { src: '/images/hero-background-mobile-2.webp',
+    alt: 'Detalhe de um drone em operação'
+  },
   {
-    src: '/images/hero-mobile-3.webp',
+    src: '/images/hero-background-mobile-3.webp',
     alt: 'Vista vertical de uma ferrovia em construção',
   },
 ];
