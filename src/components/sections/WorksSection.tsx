@@ -109,7 +109,13 @@ export default function WorksSection() {
 
   const renderCard = (work: Work) => (
     <div className="work-card">
-      <Image src={work.image} alt={work.title} className="work-card-image" />
+      <Image
+        src={work.image}
+        alt={work.title}
+        width={400}
+        height={200}
+        className="work-card-image"
+      />
       <div className="work-card-content">
         <span className="work-card-category">{work.category}</span>
         <h3 className="work-card-title">{work.title}</h3>
