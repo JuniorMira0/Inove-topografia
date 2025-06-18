@@ -8,6 +8,7 @@
     box-sizing: border-box;
     padding: 60px 40px;
     z-index: 1;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 }
 
 .services-section::before {
@@ -63,10 +64,18 @@
 }
 
 .service-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 1rem;
     font-weight: 600;
     color: #0072c6;
     margin-bottom: 5px;
+}
+
+.service-icon {
+    color: #008cff;
+    font-size: 1.2rem;
 }
 
 .service-description {
@@ -108,19 +117,28 @@
 
     .service-item {
         border-bottom: 1px solid #333;
-        padding: 20px 15;
+        padding: 20px 15px;
         cursor: pointer;
     }
 
     .service-title {
+        gap: 15px;
+        font-size: 1.1rem;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    .service-title-text {
+       flex-grow: 1;
+    }
+    
+    .service-title-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 1.1rem;
-        margin: 0;
-        transition: color 0.3s ease;
+        width: 100%;
     }
-    
+
     .service-title::after {
         content: '+';
         font-size: 1.8rem;
@@ -138,6 +156,10 @@
     }
 
     .service-item.active .service-title {
+        color: #008cff;
+    }
+    
+    .service-item.active .service-title .service-icon {
         color: #008cff;
     }
 
