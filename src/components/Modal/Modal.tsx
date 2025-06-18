@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './Modal.css';
+import Image from 'next/image';
 
 interface ModalProps {
   show: boolean;
@@ -27,7 +28,7 @@ export default function Modal({ show, onClose, work }: ModalProps) {
           &times;
         </button>
         
-        <img src={work.image} alt={work.title} className="modal-image" />
+        <Image src={work.image} alt={work.title} className="modal-image" />
         <div className="modal-text-content">
           <span className="modal-category">{work.category}</span>
           <h2 className="modal-title">{work.title}</h2>

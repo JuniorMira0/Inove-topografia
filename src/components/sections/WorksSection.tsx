@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import './WorksSection.css';
 import Modal from '../Modal/Modal';
 import { useWindowSize } from '../../hooks/useWindowSize';
+import Image from 'next/image';
 
 const worksData = [
   {
@@ -108,7 +109,7 @@ export default function WorksSection() {
 
   const renderCard = (work: Work) => (
     <div className="work-card">
-      <img src={work.image} alt={work.title} className="work-card-image" />
+      <Image src={work.image} alt={work.title} className="work-card-image" />
       <div className="work-card-content">
         <span className="work-card-category">{work.category}</span>
         <h3 className="work-card-title">{work.title}</h3>

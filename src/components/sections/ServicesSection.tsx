@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import './ServicesSection.css';
 
-import { FaBuilding, FaMapMarkedAlt, FaGlobeAmericas, FaCubes, FaTrain, FaLeaf, FaCube,  } from 'react-icons/fa';
+import { FaBuilding, FaMapMarkedAlt, FaGlobeAmericas, FaCubes, FaTrain, FaCube,  } from 'react-icons/fa';
 import { TbScale, TbDrone  } from "react-icons/tb";
 
 const servicesList = [
