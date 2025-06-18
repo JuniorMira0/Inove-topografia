@@ -10,7 +10,7 @@ export default function AboutUsSection() {
             <span className="about-us-title-line"></span>Sobre Nós
           </h2>
           <p className="about-us-intro">
-            A i9 Topografia e Georreferenciamento é sua especialista em
+            A Inove Topografia e Georreferenciamento é sua especialista em
             Cartografia, Topografia e Geodésia, atuando com precisão em áreas
             urbanas e rurais. Com uma equipe altamente capacitada e o uso de
             modernos recursos tecnológicos como GPS RTK, Estações Totais e

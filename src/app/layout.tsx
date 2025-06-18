@@ -3,7 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'i9 Topografia - Soluções em Topografia',
+  title: 'Inove Topografia - Soluções em Topografia',
   description: 'Serviços especializados em topografia para seus projetos.',
 };
 
