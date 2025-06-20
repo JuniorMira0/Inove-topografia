@@ -8,7 +8,6 @@ export default function ContactSection() {
   return (
     <section id="contato" className="contact-section">
       <div className="contact-wrapper">
-        {/* Coluna da Esquerda: Título e Informações */}
         <div className="contact-info-column">
           <h2 className="contact-main-title">
             <span className="contact-title-line"></span>Contato
@@ -41,7 +40,6 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Coluna da Direita: Formulário */}
         <div className="contact-form-column">
           <form 
             action="https://formspree.io/f/YOUR_FORM_ID"
