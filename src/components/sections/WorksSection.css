@@ -21,6 +21,7 @@
     width: 100%;
     max-width: 1280px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 .works-main-title {
@@ -55,9 +56,13 @@
     box-shadow: 0 10px 20px rgba(0, 114, 198, 0.1);
 }
 
-.work-card-image {
+.work-card-image-container {
     width: 100%;
     height: 200px;
+    position: relative;
+}
+
+.work-card-image {
     object-fit: cover;
 }
 
@@ -174,6 +179,6 @@
     
     .works-carousel .swiper-button-next,
     .works-carousel .swiper-button-prev {
-    display: none;
-  }
+        display: none;
+    }
 }

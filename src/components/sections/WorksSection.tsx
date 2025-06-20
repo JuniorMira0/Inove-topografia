@@ -109,13 +109,14 @@ export default function WorksSection() {
 
   const renderCard = (work: Work) => (
     <div className="work-card">
-      <Image
-        src={work.image}
-        alt={work.title}
-        width={400}
-        height={200}
-        className="work-card-image"
-      />
+      <div className="work-card-image-container">
+        <Image
+          src={work.image}
+          alt={work.title}
+          fill
+          className="work-card-image"
+        />
+      </div>
       <div className="work-card-content">
         <span className="work-card-category">{work.category}</span>
         <h3 className="work-card-title">{work.title}</h3>
@@ -133,27 +134,15 @@ export default function WorksSection() {
 
             <Swiper
               modules={[Navigation, Pagination]}
-              navigation
+              navigation={!isMobile}
               pagination={{ clickable: true }}
               className="works-carousel"
               autoHeight={isMobile}
               breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 50,
-                },
-                1280: {
-                  slidesPerView: 4,
-                  spaceBetween: 50,
-                },
+                320: { slidesPerView: 1, spaceBetween: 30 },
+                768: { slidesPerView: 2, spaceBetween: 40 },
+                1024: { slidesPerView: 3, spaceBetween: 50 },
+                1280: { slidesPerView: 4, spaceBetween: 50 },
               }}
             >
               {worksData.map((work) => (
