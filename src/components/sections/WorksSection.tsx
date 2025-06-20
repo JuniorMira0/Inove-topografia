@@ -41,7 +41,7 @@ const worksData = [
   },
   {
     id: 4,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/metro-sp.webp',
     title: 'Metrô de São Paulo',
     location: 'São Paulo, SP',
     description:
@@ -50,7 +50,7 @@ const worksData = [
   },
   {
     id: 5,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/tegram.webp',
     title: 'TEGRAM - Terminal de Grãos',
     location: 'Maranhão, MA',
     description:
@@ -59,7 +59,7 @@ const worksData = [
   },
   {
     id: 6,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/J.Demito.webp',
     title: 'Grupo J. Demito',
     location: 'TO, MA, MT',
     description:
@@ -68,7 +68,7 @@ const worksData = [
   },
   {
     id: 7,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/mina-ceu.webp',
     title: 'Epenge Mineradora',
     location: 'Tocantins, TO',
     description:
@@ -77,7 +77,7 @@ const worksData = [
   },
   {
     id: 8,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/yamana.webp',
     title: 'Yamana Gold',
     location: 'Goiás, GO',
     description:
