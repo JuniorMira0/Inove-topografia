@@ -88,9 +88,12 @@ export default function HeroHeader() {
               <FaEnvelope />
               <span>contato@inovesolucoestopografia.com.br</span>
             </a>
-            <a href="tel:+5562992874926" className="top-bar-info-item">
-              <FaPhoneAlt />
-              <span>(62) 99287-4926</span>
+            <a
+              href="https://wa.me/5562992874926"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              (62) 99287-4926
             </a>
           </div>
         )}
