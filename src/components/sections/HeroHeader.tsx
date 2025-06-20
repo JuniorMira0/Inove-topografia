@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
-import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
 
 const navLinks = [
   { href: '#sobre', label: 'Sobre Nós' },
@@ -92,8 +92,10 @@ export default function HeroHeader() {
               href="https://wa.me/5562992874926"
               target="_blank"
               rel="noopener noreferrer"
+              className="top-bar-info-item"
             >
-              (62) 99287-4926
+              <FaPhoneAlt />
+              <span>(62) 99287-4926</span>
             </a>
           </div>
         )}
