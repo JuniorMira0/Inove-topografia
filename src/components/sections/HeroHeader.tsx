@@ -172,11 +172,11 @@ export default function HeroHeader() {
                 href="https://wa.me/5562992874926"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="mobile-nav-info-item"
               >
-                (62) 99287-4926
+                <FaPhoneAlt />
+                <span>(62) 99287-4926</span>
               </a>
-              <FaPhoneAlt />
-              <span>(62) 99287-4926</span>
             </div>
           </nav>
         </div>
