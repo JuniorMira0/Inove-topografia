@@ -114,6 +114,7 @@ export default function WorksSection() {
           src={work.image}
           alt={work.title}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="work-card-image"
         />
       </div>

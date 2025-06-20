@@ -65,13 +65,15 @@
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
 }
 
 .info-icon {
     font-size: 1.2rem;
     color: #008cff;
+    margin-top: 5px;
+    flex-shrink: 0;
 }
 
 .info-item h4 {
@@ -87,6 +89,7 @@
     color: #c0c0c0;
     text-decoration: none;
     transition: color 0.3s ease;
+    word-break: break-all; /* Ajuda a quebrar o e-mail se necessário */
 }
 
 .info-item a:hover {

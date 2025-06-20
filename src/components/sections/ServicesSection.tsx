@@ -81,6 +81,7 @@ export default function ServicesSection() {
           fill
           style={{ objectFit: 'cover' }}
           quality={85}
+          sizes="(max-width: 1023px) 100vw, 45vw"
         />
       </div>
       <div className="services-text-column">
