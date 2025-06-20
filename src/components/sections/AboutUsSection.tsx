@@ -6,9 +6,7 @@ export default function AboutUsSection() {
     <section id="sobre" className="about-us-section">
       <div className="about-us-container">
         <div className="about-us-content-wrapper">
-          <h2 className="about-us-title">
-            <span className="about-us-title-line"></span>Sobre Nós
-          </h2>
+          <h2 className="about-us-title">Sobre Nós</h2>
           <p className="about-us-intro">
             A Inove Topografia e Georreferenciamento é sua especialista em
             Cartografia, Topografia e Geodésia, atuando com precisão em áreas

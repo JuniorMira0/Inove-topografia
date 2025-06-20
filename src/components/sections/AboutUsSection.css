@@ -50,14 +50,6 @@
   justify-content: center;
 }
 
-.about-us-title-line {
-  display: inline-block;
-  width: 30px;
-  height: 2px;
-  background-color: #0072c6;
-  margin-right: 10px;
-}
-
 .about-us-intro {
   text-align: center;
   font-size: 1rem;

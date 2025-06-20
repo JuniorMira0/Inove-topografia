@@ -128,9 +128,7 @@ export default function WorksSection() {
     <>
       <section id="obras" className="works-section">
         <div className="works-container">
-          <h2 className="works-main-title">
-            <span className="works-title-line"></span>Obras Realizadas
-          </h2>
+          <h2 className="works-main-title">Obras Realizadas</h2>
 
           <Swiper
             modules={[Navigation, Pagination]}
