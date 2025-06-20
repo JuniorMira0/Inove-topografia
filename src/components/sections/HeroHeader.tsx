@@ -145,12 +145,6 @@ export default function HeroHeader() {
         </ul>
       </nav>
 
-      <div className="hero-header-content">
-        <h1 className="hero-header-mainTitle">
-          Soluções Inteligentes em Topografia
-        </h1>
-      </div>
-
       {isMobileMenuOpen && (
         <div className="hero-header-mobileNavPanel">
           <nav>

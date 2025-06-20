@@ -76,7 +76,7 @@ export default function ServicesSection() {
     <section id="servicos" className="services-section">
       <div className="services-image-column">
         <Image
-          src="/images/hero-background-mobile.webp"
+          src="/images/topographic-background.webp"
           alt="Topógrafo da i9 Topografia em campo com equipamento"
           fill
           style={{ objectFit: 'cover' }}
