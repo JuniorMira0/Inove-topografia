@@ -18,21 +18,21 @@ export default function ContactSection() {
           <div className="info-items-container">
             <div className="info-item">
               <FaPhoneAlt className="info-icon" />
-              <div>
+              <div className="info-text">
                 <h4>Telefone / WhatsApp</h4>
                 <a href="https://wa.me/5562992874926" target="_blank" rel="noopener noreferrer">(62) 99287-4926</a>
               </div>
             </div>
             <div className="info-item">
               <FaEnvelope className="info-icon" />
-              <div>
+              <div className="info-text">
                 <h4>E-mail</h4>
                 <a href="mailto:contato@inovesolucoestopografia.com.br">contato@inovesolucoestopografia.com.br</a>
               </div>
             </div>
             <div className="info-item">
                 <FaMapMarkerAlt className="info-icon" />
-                <div>
+                <div className="info-text">
                     <h4>Localização</h4>
                     <p>Goiânia, GO e Região</p>
                 </div>

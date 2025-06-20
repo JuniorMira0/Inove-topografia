@@ -76,6 +76,10 @@
     flex-shrink: 0;
 }
 
+.info-text {
+    min-width: 0;
+}
+
 .info-item h4 {
     font-size: 1rem;
     color: #ffffff;
@@ -89,7 +93,7 @@
     color: #c0c0c0;
     text-decoration: none;
     transition: color 0.3s ease;
-    word-break: break-all; /* Ajuda a quebrar o e-mail se necessário */
+    word-break: break-all;
 }
 
 .info-item a:hover {
