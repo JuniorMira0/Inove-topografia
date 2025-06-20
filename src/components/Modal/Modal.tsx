@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React from 'react';
 import './Modal.css';
@@ -27,8 +27,14 @@ export default function Modal({ show, onClose, work }: ModalProps) {
         <button className="modal-close-button" onClick={onClose}>
           &times;
         </button>
-        
-        <Image src={work.image} alt={work.title} className="modal-image" />
+
+        <Image
+          src={work.image}
+          alt={work.title}
+          width={800}
+          height={450}
+          className="modal-image"
+        />
         <div className="modal-text-content">
           <span className="modal-category">{work.category}</span>
           <h2 className="modal-title">{work.title}</h2>

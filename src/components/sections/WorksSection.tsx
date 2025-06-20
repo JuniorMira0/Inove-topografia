@@ -14,7 +14,7 @@ import Image from 'next/image';
 const worksData = [
   {
     id: 1,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/Ferrovia-Carajas.webp',
     title: 'Duplicação da Ferrovia Carajás',
     location: 'Pará, PA',
     description:
@@ -23,7 +23,7 @@ const worksData = [
   },
   {
     id: 2,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/Baixada-Santista.webp',
     title: 'Remodelação da Baixada Santista',
     location: 'São Paulo, SP',
     description:
@@ -32,7 +32,7 @@ const worksData = [
   },
   {
     id: 3,
-    image: '/images/topographic-background.webp',
+    image: '/images/works/Norte-Sul.webp',
     title: 'Ferrovia Norte-Sul',
     location: 'Trecho TO-MA',
     description:
@@ -127,45 +127,47 @@ export default function WorksSection() {
   return (
     <>
       <section id="obras" className="works-section">
-        <div className="works-container">
-          <h2 className="works-main-title">Obras Realizadas</h2>
+        <div className="works-content-box">
+          <div className="works-container">
+            <h2 className="works-main-title">Obras Realizadas</h2>
 
-          <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            className="works-carousel"
-            autoHeight={isMobile}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 30,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-              },
-              1280: {
-                slidesPerView: 4,
-                spaceBetween: 50,
-              },
-            }}
-          >
-            {worksData.map((work) => (
-              <SwiperSlide key={work.id}>
-                <div
-                  className="work-card-clickable"
-                  onClick={() => handleOpenModal(work)}
-                >
-                  {renderCard(work)}
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              navigation
+              pagination={{ clickable: true }}
+              className="works-carousel"
+              autoHeight={isMobile}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+                1280: {
+                  slidesPerView: 4,
+                  spaceBetween: 50,
+                },
+              }}
+            >
+              {worksData.map((work) => (
+                <SwiperSlide key={work.id}>
+                  <div
+                    className="work-card-clickable"
+                    onClick={() => handleOpenModal(work)}
+                  >
+                    {renderCard(work)}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </section>
 

@@ -1,12 +1,20 @@
 .works-section {
     min-height: 100vh;
-    padding: 10px 0;
-    background-color: #12121200;
+    padding: 40px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.works-content-box {
+    background-color: rgba(255, 255, 255, 0.442);
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 1400px;
 }
 
 .works-container {
@@ -33,6 +41,7 @@
 
 .work-card {
     background-color: #1e1e1e;
+    border: 1px solid #d6d4d4fc;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
@@ -141,6 +150,12 @@
     .works-section {
         min-height: auto;
         padding: 60px 20px;
+    }
+
+    .works-content-box {
+        padding: 20px 15px;
+        background-color: rgba(255, 255, 255, 0.442);
+        box-shadow: none;
     }
 
     .works-main-title {
