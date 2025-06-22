@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './ContactSection.css';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 export default function ContactSection() {
   return (
@@ -29,13 +29,6 @@ export default function ContactSection() {
                 <h4>E-mail</h4>
                 <a href="mailto:contato@inovesolucoestopografia.com.br">contato@inovesolucoestopografia.com.br</a>
               </div>
-            </div>
-            <div className="info-item">
-                <FaMapMarkerAlt className="info-icon" />
-                <div className="info-text">
-                    <h4>Localização</h4>
-                    <p>Goiânia, GO e Região</p>
-                </div>
             </div>
           </div>
         </div>
