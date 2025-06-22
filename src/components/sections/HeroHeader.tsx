@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
-import { FaEnvelope, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 const navLinks = [
   { href: '#sobre', label: 'Sobre Nós' },
