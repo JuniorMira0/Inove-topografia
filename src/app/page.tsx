@@ -1,3 +1,4 @@
+import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
 import AboutUsSection from '@/components/sections/AboutUsSection';
 import ContactSection from '@/components/sections/ContactSection';
 import HeroHeader from '@/components/sections/HeroHeader';
@@ -12,6 +13,7 @@ export default function HomePage() {
       <ServicesSection />
       <WorksSection />
       <ContactSection />
+      <ScrollToTopButton />
     </>
   );
 }
