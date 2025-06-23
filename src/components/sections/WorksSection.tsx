@@ -58,6 +58,15 @@ const worksData = [
     category: 'Logística Portuária',
   },
   {
+    id: 6,
+    image: '/images/works/J.Demito.webp',
+    title: 'Grupo J. Demito',
+    location: 'TO, MA, MT',
+    description:
+      'Suporte topográfico para um dos maiores grupos do agronegócio brasileiro, com operações de mineração de calcário e produção de grãos nas regiões Norte e Nordeste.',
+    category: 'Mineração',
+  },
+  {
     id: 7,
     image: '/images/works/mina-ceu.webp',
     title: 'Epenge Mineradora',

@@ -1,10 +1,27 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ContactSection.css';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactSection() {
+  const [formState, handleFormspreeSubmit] = useForm("xldnppoy");
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    if (formState.succeeded) {
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    }
+  }, [formState.succeeded]);
+
   return (
     <section id="contato" className="contact-section">
       <div className="contact-wrapper">
@@ -34,28 +51,71 @@ export default function ContactSection() {
         </div>
 
         <div className="contact-form-column">
-          <form 
-            action="https://formspree.io/f/xldnppoy"
-            method="POST" 
-            className="contact-form"
-          >
+          <form onSubmit={handleFormspreeSubmit} className="contact-form">
             <div className="form-group">
               <label htmlFor="name">Seu Nome</label>
-              <input type="text" id="name" name="name" required />
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                value={name} 
+                onChange={(e) => setName(e.target.value)} 
+                required 
+              />
             </div>
             <div className="form-group">
               <label htmlFor="email">Seu E-mail</label>
-              <input type="email" id="email" name="email" required />
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required 
+              />
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={formState.errors}
+                className="form-error-message"
+              />
             </div>
             <div className="form-group">
               <label htmlFor="subject">Assunto</label>
-              <input type="text" id="subject" name="subject" required />
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                required 
+              />
             </div>
             <div className="form-group">
               <label htmlFor="message">Sua Mensagem</label>
-              <textarea id="message" name="message" rows={5} required></textarea>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows={5} 
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              ></textarea>
+              <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={formState.errors}
+                className="form-error-message"
+              />
             </div>
-            <button type="submit" className="submit-button">Enviar Mensagem</button>
+            <div className="form-submit-area">
+                <button type="submit" className="submit-button" disabled={formState.submitting}>
+                    Enviar Mensagem
+                </button>
+                {formState.succeeded && (
+                    <p className="form-success-message">Mensagem enviada com sucesso!</p>
+                )}
+            </div>
           </form>
         </div>
       </div>

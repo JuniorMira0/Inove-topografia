@@ -145,6 +145,23 @@
   margin-top: 10px;
 }
 
+.form-submit-area {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-success-message {
+    color: #2ecc71;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.form-error-message {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
 .submit-button:hover {
   background-color: #005a9e;
 }
