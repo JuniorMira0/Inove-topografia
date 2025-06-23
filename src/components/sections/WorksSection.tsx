@@ -58,15 +58,6 @@ const worksData = [
     category: 'Logística Portuária',
   },
   {
-    id: 6,
-    image: '/images/works/J.Demito.webp',
-    title: 'Grupo J. Demito',
-    location: 'TO, MA, MT',
-    description:
-      'Desenvolvimento de projetos de agricultura de precisão, incluindo mapeamento de propriedades e otimização de linhas de plantio para aumento de eficiência operacional.',
-    category: 'Agricultura de Precisão',
-  },
-  {
     id: 7,
     image: '/images/works/mina-ceu.webp',
     title: 'Epenge Mineradora',
