@@ -51,7 +51,7 @@
 }
 
 .contact-subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #c0c0c0;
   margin-bottom: 40px;
@@ -171,6 +171,14 @@
     min-height: auto;
     padding: 60px 20px;
   }
+
+  .contact-main-title {
+    font-size: 1.8rem;
+}
+
+.contact-subtitle {
+    font-size: 0.9rem;
+}
 
   .contact-wrapper {
     flex-direction: column;
