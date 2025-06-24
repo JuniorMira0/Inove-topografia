@@ -75,15 +75,6 @@ const worksData = [
       'Topografia de mina a céu aberto, realizando o mapeamento de cavas, frentes de lavra e pilhas de estéril, além do controle preciso de volumes de material.',
     category: 'Mineração',
   },
-  {
-    id: 8,
-    image: '/images/works/yamana.webp',
-    title: 'Yamana Gold',
-    location: 'Goiás, GO',
-    description:
-      'Apoio topográfico completo para operações de mineração de ouro, incluindo levantamentos para planejamento de lavra e monitoramento de estruturas geotécnicas.',
-    category: 'Mineração',
-  },
 ];
 
 type Work = (typeof worksData)[0];

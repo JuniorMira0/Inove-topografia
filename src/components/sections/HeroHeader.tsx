@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
-import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
 
 const navLinks = [
   { href: '#sobre', label: 'Sobre Nós' },
@@ -22,31 +22,37 @@ const navLinks = [
   { href: '#contato', label: 'Contato' },
 ];
 
-const desktopBackgroundImages = [
+const desktopBackgrounds = [
   {
-    src: '/images/hero-background-desktop.webp',
-    alt: 'Topógrafo em campo aberto com montanhas',
+    type: 'video',
+    src: '/images/hero-background-desktop-4.mp4',
+    alt: 'Vídeo banner',
   },
   {
+    type: 'image',
     src: '/images/hero-background-desktop-2.webp',
-    alt: 'Equipamento de topografia em detalhe ao pôr do sol',
+    alt: 'Drone sobrevoando área de mineração',
   },
   {
+    type: 'image',
     src: '/images/hero-background-desktop-3.webp',
     alt: 'Drone sobrevoando área de mineração',
   },
 ];
 
-const mobileBackgroundImages = [
+const mobileBackgrounds = [
   {
+    type: 'image',
     src: '/images/hero-background-mobile.webp',
     alt: 'Topógrafo trabalhando visto de perto',
   },
   {
+    type: 'image',
     src: '/images/hero-background-mobile-2.webp',
     alt: 'Detalhe de um drone em operação',
   },
   {
+    type: 'image',
     src: '/images/hero-background-mobile-3.webp',
     alt: 'Vista vertical de uma ferrovia em construção',
   },
@@ -56,9 +62,9 @@ export default function HeroHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { width } = useWindowSize();
   const isMobile = width !== undefined && width < 1023;
-  const imagesToDisplay = isMobile
-    ? mobileBackgroundImages
-    : desktopBackgroundImages;
+  const backgroundsToDisplay = isMobile
+    ? mobileBackgrounds
+    : desktopBackgrounds;
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -109,7 +115,7 @@ export default function HeroHeader() {
             aria-label={isMobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={isMobileMenuOpen}
           >
-            <div className="hamburger-icon-container"></div>
+            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
         )}
       </div>
@@ -119,20 +125,33 @@ export default function HeroHeader() {
           modules={[Autoplay, Pagination, EffectFade]}
           effect="fade"
           loop={true}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 8000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           allowTouchMove={false}
           className="hero-swiper"
         >
-          {imagesToDisplay.map((image, index) => (
-            <SwiperSlide key={index}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                style={{ objectFit: 'cover' }}
-                priority={index === 0}
-              />
+          {backgroundsToDisplay.map((item, index) => (
+            <SwiperSlide key={item.src}>
+              {item.type === 'video' ? (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="hero-video-background"
+                  key={item.src}
+                >
+                  <source src={item.src} type="video/mp4" />
+                </video>
+              ) : (
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  priority={index === 0}
+                />
+              )}
             </SwiperSlide>
           ))}
         </Swiper>
