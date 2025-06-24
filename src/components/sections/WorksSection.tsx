@@ -36,7 +36,7 @@ const worksData = [
     title: 'Ferrovia Norte-Sul',
     location: 'Trecho TO-MA',
     description:
-      'Locação de eixo e controle geométrico de precisão em mais de 180 km de via, apoiando diretamente a implantação e duplicação da ferrovia.',
+      'Locação de eixo e controle geométrico de precisão em mais de 180 km de via, apoiando diretamente a implantação da ferrovia.',
     category: 'Infraestrutura Ferroviária',
   },
   {
@@ -63,7 +63,7 @@ const worksData = [
     title: 'Grupo J. Demito',
     location: 'TO, MA, MT',
     description:
-      'Suporte topográfico para um dos maiores grupos do agronegócio brasileiro, com operações de mineração de calcário e produção de grãos nas regiões Norte e Nordeste.',
+      'A Inove Soluções foi contratada para realizar uma série de levantamentos topográficos de alta precisão nas unidades industriais e áreas de mineração pertencentes ao Grupo JDemito — um dos maiores conglomerados agroindustriais do Brasil, com atuação em mineração, etanol, logística e corretivos agrícolas. Os trabalhos abrangeram mapeamento planialtimétrico, volumetria, georreferenciamento, apoio à engenharia civil e modelagem 3D das áreas industriais e operacionais.',
     category: 'Mineração',
   },
   {
