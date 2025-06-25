@@ -3,8 +3,9 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Inove Topografia - Soluções em Topografia',
-  description: 'Serviços especializados em topografia para seus projetos.',
+  title: "Inove Soluções em Topografia | Precisão em Goiás",
+  description: "Serviços de topografia, georreferenciamento e agrimensura em Goiânia e região. Especialistas em obras civis, ferrovias e agricultura de precisão.",
+  keywords: "topografia, georreferenciamento, agrimensura, goiânia, goiás, drone, obras",
 };
 
 export default function RootLayout({
@@ -29,6 +30,45 @@ export default function RootLayout({
           href="/apple-touch-icon.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Inove Soluções em Topografia",
+              "telephone": "+5562992874926",
+              "email": "contato@inovesolucoestopografia.com.br",
+              "url": "https://www.inovesolucoestopografia.com.br/",
+              "areaServed": [
+                {
+                  "@type": "State",
+                  "name": "Goiás"
+                },
+                {
+                  "@type": "State",
+                  "name": "Tocantins"
+                },
+                {
+                  "@type": "State",
+                  "name": "Maranhão"
+                },
+                {
+                  "@type": "State",
+                  "name": "Mato Grosso"
+                },
+                {
+                  "@type": "State",
+                  "name": "Pará"
+                },
+                {
+                  "@type": "State",
+                  "name": "São Paulo"
+                }
+              ]
+            }
+          `}
+        </script>
       </head>
       <body>
         {children}
