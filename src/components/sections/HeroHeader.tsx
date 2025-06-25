@@ -25,17 +25,17 @@ const navLinks = [
 const desktopBackgrounds = [
   {
     type: 'video',
-    src: '/images/hero-background-desktop-4.mp4',
+    src: '',
     alt: 'Vídeo banner',
   },
   {
     type: 'image',
-    src: '/images/hero-background-desktop-2.webp',
+    src: '',
     alt: 'Drone sobrevoando área de mineração',
   },
   {
     type: 'image',
-    src: '/images/hero-background-desktop-3.webp',
+    src: '',
     alt: 'Drone sobrevoando área de mineração',
   },
 ];
@@ -43,22 +43,22 @@ const desktopBackgrounds = [
 const mobileBackgrounds = [
   {
     type: 'video',
-    src: '/images/hero-background-mobile.mp4',
+    src: '',
     alt: 'Detalhe de um drone em operação',
   },
   {
     type: 'image',
-    src: '/images/hero-background-mobile.webp',
+    src: '',
     alt: 'Topógrafo trabalhando visto de perto',
   },
   {
     type: 'image',
-    src: '/images/hero-background-mobile-3.webp',
+    src: '',
     alt: 'Vista vertical de uma ferrovia em construção',
   },
   {
     type: 'image',
-    src: '/images/hero-background-mobile-4.webp',
+    src: '',
     alt: 'Vista vertical de uma ferrovia em construção',
   },
 ];
