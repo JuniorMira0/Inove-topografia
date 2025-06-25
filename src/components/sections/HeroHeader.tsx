@@ -18,7 +18,7 @@ const navLinks = [
   { href: '#sobre', label: 'Sobre Nós' },
   { href: '#servicos', label: 'Serviços' },
   { href: '#obras', label: 'Obras' },
-  { href: '#diferenciais', label: 'Diferenciais' },
+  { href: '#equipamentos', label: 'Equipamentos' },
   { href: '#contato', label: 'Contato' },
 ];
 
