@@ -47,13 +47,18 @@ const mobileBackgrounds = [
     alt: 'Topógrafo trabalhando visto de perto',
   },
   {
-    type: 'image',
-    src: '/images/hero-background-mobile-2.webp',
+    type: 'video',
+    src: '/images/hero-background-mobile.mp4',
     alt: 'Detalhe de um drone em operação',
   },
   {
     type: 'image',
     src: '/images/hero-background-mobile-3.webp',
+    alt: 'Vista vertical de uma ferrovia em construção',
+  },
+  {
+    type: 'image',
+    src: '/images/hero-background-mobile-4.webp',
     alt: 'Vista vertical de uma ferrovia em construção',
   },
 ];
