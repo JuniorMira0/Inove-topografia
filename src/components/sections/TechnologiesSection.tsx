@@ -69,7 +69,7 @@ export default function TechnologiesSection() {
     );
 
     return (
-        <section id="diferenciais" className="technologies-section">
+        <section id="equipamentos" className="technologies-section">
             <div className="technologies-container">
                 <h2 className="technologies-main-title">Tecnologias e Equipamentos</h2>
                 <p className="technologies-intro">
