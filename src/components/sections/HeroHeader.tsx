@@ -25,41 +25,46 @@ const navLinks = [
 const desktopBackgrounds = [
   {
     type: 'video',
-    src: '',
+    src: '/images/banner/banner-desktop-01.webp',
     alt: 'Vídeo banner',
   },
   {
     type: 'image',
-    src: '',
+    src: '/images/banner/banner-desktop-02.webp',
     alt: 'Drone sobrevoando área de mineração',
   },
   {
     type: 'image',
-    src: '',
+    src: '/images/banner/banner-desktop-03.webp',
+    alt: 'Drone sobrevoando área de mineração',
+  },
+  {
+    type: 'image',
+    src: '/images/banner/banner-desktop-04.webp',
     alt: 'Drone sobrevoando área de mineração',
   },
 ];
 
 const mobileBackgrounds = [
   {
-    type: 'video',
-    src: '',
+    type: 'image',
+    src: '/images/banner/banner-mobile-01.webp',
     alt: 'Detalhe de um drone em operação',
   },
   {
     type: 'image',
-    src: '',
+    src: '/images/banner/banner-mobile-02.webp',
     alt: 'Topógrafo trabalhando visto de perto',
   },
   {
     type: 'image',
-    src: '',
+    src: '/images/banner/banner-mobile-03.webp',
     alt: 'Vista vertical de uma ferrovia em construção',
   },
   {
     type: 'image',
-    src: '',
-    alt: 'Vista vertical de uma ferrovia em construção',
+    src: '/images/banner/banner-mobile-04.webp',
+    alt: 'Vista aerea de operadores em mina',
   },
 ];
 
@@ -137,26 +142,13 @@ export default function HeroHeader() {
         >
           {backgroundsToDisplay.map((item, index) => (
             <SwiperSlide key={item.src}>
-              {item.type === 'video' ? (
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="hero-video-background"
-                  key={item.src}
-                >
-                  <source src={item.src} type="video/mp4" />
-                </video>
-              ) : (
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  priority={index === 0}
-                />
-              )}
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                style={{ objectFit: 'cover' }}
+                priority={index === 0}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
