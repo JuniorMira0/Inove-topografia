@@ -100,7 +100,25 @@ export default function TechnologiesSection() {
                     </Swiper>
                 ) : (
                     <div className="technologies-grid">
-                        {equipmentCategories.map((category) => renderCard(category))}
+                        {equipmentCategories.map((category) => (
+                            <div className="technology-card" key={category.title}>
+                                <Image
+                                    src={category.image}
+                                    alt={category.title}
+                                    width={400}
+                                    height={225}
+                                    className="technology-card-image"
+                                />
+                                <div className="technology-card-content">
+                                    <h3 className="technology-card-title">{category.title}</h3>
+                                    <ul className="technology-card-list">
+                                        {category.items.map((item) => (
+                                            <li key={item}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 )}
             </div>
