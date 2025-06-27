@@ -24,24 +24,24 @@ const navLinks = [
 
 const desktopBackgrounds = [
     {
-        type: 'video',
+        type: 'image',
         src: '/images/banner/banner-desktop-01.webp',
-        alt: 'Vídeo banner',
+        alt: 'Drone profissional para topografia sobrevoando lavoura ao amanhecer',
     },
     {
         type: 'image',
         src: '/images/banner/banner-desktop-02.webp',
-        alt: 'Drone sobrevoando área de mineração',
+        alt: 'Topógrafo com estação total em campo de agricultura de precisão',
     },
     {
         type: 'image',
         src: '/images/banner/banner-desktop-03.webp',
-        alt: 'Drone sobrevoando área de mineração',
+        alt: 'Vista aérea de pátio ferroviário em grande obra de infraestrutura',
     },
     {
         type: 'image',
         src: '/images/banner/banner-desktop-04.webp',
-        alt: 'Drone sobrevoando área de mineração',
+        alt: 'Levantamento topográfico em área de rejeitos de mineração',
     },
 ];
 
@@ -49,22 +49,22 @@ const mobileBackgrounds = [
     {
         type: 'image',
         src: '/images/banner/banner-mobile-01.webp',
-        alt: 'Detalhe de um drone em operação',
+        alt: 'Drone de alta precisão sobrevoando uma lavoura para mapeamento agrícola',
     },
     {
         type: 'image',
         src: '/images/banner/banner-mobile-02.webp',
-        alt: 'Topógrafo trabalhando visto de perto',
+        alt: 'Topógrafo utilizando receptor GNSS RTK em campo de pivô central',
     },
     {
         type: 'image',
         src: '/images/banner/banner-mobile-03.webp',
-        alt: 'Vista vertical de uma ferrovia em construção',
+        alt: 'Vista aérea de pátio de manobras para locação de eixos ferroviários',
     },
     {
         type: 'image',
         src: '/images/banner/banner-mobile-04.webp',
-        alt: 'Vista aerea de operadores em mina',
+        alt: 'Topógrafo realizando levantamento planialtimétrico em área de mineração',
     },
 ];
 
