@@ -22,6 +22,16 @@ const equipmentCategories = [
     ],
   },
   {
+    type: 'video',
+    src: '/images/tech/video3D.mp4',
+    title: 'Softwares de Processamento',
+    items: [
+      'Modelagem 3D para corredores e cálculo de volumes',
+      'Processamento de imagens de drone (Fotogrametria)',
+      'Análise espacial e geração de mapas temáticos (GIS)',
+    ],
+  },
+  {
     type: 'image',
     src: '/images/tech/drone-rtk.webp',
     title: 'Drones (VANTs)',
@@ -30,14 +40,6 @@ const equipmentCategories = [
       'DJI Mavic 3E',
       'Sensores para Mapeamento de Precisão',
     ],
-  },
-  {
-    type: 'video',
-    src: '/images/tech/video3D.mp4',
-    title: 'Softwares de Processamento',
-    items: ['Modelagem 3D para corredores e cálculo de volumes',
-        'Processamento de imagens de drone (Fotogrametria)',
-        'Análise espacial e geração de mapas temáticos (GIS)'],
   },
   {
     type: 'image',
