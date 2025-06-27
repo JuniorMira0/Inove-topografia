@@ -36,14 +36,14 @@ export default function ContactSection() {
             <div className="info-item">
               <FaPhoneAlt className="info-icon" />
               <div className="info-text">
-                <h4>Telefone / WhatsApp</h4>
+                <h3>Telefone / WhatsApp</h3>
                 <a href="https://wa.me/5562992874926" target="_blank" rel="noopener noreferrer">(62) 99287-4926</a>
               </div>
             </div>
             <div className="info-item">
               <FaEnvelope className="info-icon" />
               <div className="info-text">
-                <h4>E-mail</h4>
+                <h3>E-mail</h3>
                 <a href="mailto:contato@inovesolucoestopografia.com.br">contato@inovesolucoestopografia.com.br</a>
               </div>
             </div>
