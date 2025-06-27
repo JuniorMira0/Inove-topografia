@@ -31,3 +31,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
