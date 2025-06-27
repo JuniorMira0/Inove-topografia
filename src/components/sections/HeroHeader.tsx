@@ -86,7 +86,7 @@ export default function HeroHeader() {
         <div className="top-bar-logo">
           <Link href="/">
             <Image
-              src="/images/Logo-header.png"
+              src="/images/logo-header.png"
               alt="Logo Inove Topografia"
               width={180}
               height={54}
