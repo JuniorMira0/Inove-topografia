@@ -1,31 +1,57 @@
-# i9 Topografia - Landing Page
+# Inove Soluções em Topografia - Site Institucional
 
 ## 📖 Descrição
 
-Este projeto é a landing page oficial da **i9 Topografia**, uma empresa especializada em soluções e serviços de topografia. O objetivo principal desta página é apresentar a empresa, seus serviços, projetos realizados e facilitar o contato de potenciais clientes, estabelecendo uma presença online moderna e eficaz.
+Este projeto é o site institucional oficial da **Inove Soluções em Topografia**, uma empresa especializada em soluções de alta precisão para os setores de infraestrutura, mineração e agronegócio. O objetivo principal do site é estabelecer uma presença online moderna e eficaz, apresentando a empresa, seus serviços, portfólio de projetos e facilitando o contato de potenciais clientes.
 
-## ✨ Funcionalidades Principais
+**✨ Site ao vivo:** [**https://www.inovesolucoestopografia.com.br/**](https://www.inovesolucoestopografia.com.br/)
 
-A landing page incluirá as seguintes seções e funcionalidades:
 
-* **Seção Hero:** Apresentação inicial impactante com o propósito da i9 Topografia.
-* **Sobre Nós:** Informações sobre a história, missão, visão e valores da empresa.
-* **Serviços:** Detalhamento dos serviços de topografia oferecidos.
-* **Projetos:** Portfólio com exemplos de projetos já realizados pela i9 Topografia.
-* **Equipamentos (Opcional):** Destaque para os equipamentos de ponta utilizados.
-* **Contato:** Formulário de contato e outras formas de comunicação (telefone, e-mail, endereço).
-* **Design Responsivo:** Totalmente adaptável a desktops, tablets e dispositivos móveis.
-* **Otimizada para SEO:** Boas práticas para melhor rankeamento em motores de busca.
+## ✨ Funcionalidades Implementadas
 
-## 🚀 Tecnologias Utilizadas
+A aplicação é uma "single-page" com navegação suave entre as seções:
 
-Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
+* **Header & Navegação:**
+    * **Barra Superior (Top Bar):** Exibe informações de contato rápido (e-mail, WhatsApp) no desktop.
+    * **Menu Principal:** Navegação fixa na base da seção Hero no desktop e um menu hambúrguer funcional no mobile.
+    * **Menu Mobile:** O menu hambúrguer se transforma em um "X" e abre um painel em tela cheia com os links de navegação e as informações de contato. A rolagem da página é travada quando o menu está aberto para melhor usabilidade.
 
-* **[Next.js](https://nextjs.org/)**: Framework React para produção (renderização estática e server-side).
-* **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
-* **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
-* **CSS Modules / [Tailwind CSS]**: Para estilização dos componentes.
-* **ESLint**: Para linting e padronização do código.
+* **Seção Hero:**
+    * Carrossel de tela cheia que mistura **vídeos e imagens** de fundo, com transição "fade" e autoplay.
+    * O sistema carrega mídias diferentes para desktop (paisagem) e mobile (retrato) para garantir a melhor qualidade visual.
+
+* **Seção Serviços:**
+    * No desktop, os serviços são exibidos em um grid organizado.
+    * No mobile, a seção se transforma em um **menu sanfona (accordion) interativo**, onde o usuário toca no título para expandir a descrição. Ícones representam cada serviço.
+
+* **Seção Obras (Portfólio):**
+    * Apresenta os projetos realizados em um **carrossel de cards**.
+    * No desktop, cada card é clicável e abre um **modal (pop-up)** com a descrição completa do projeto.
+    * No mobile, os cards exibem a descrição completa diretamente, sem modal.
+
+* **Seção Tecnologias e Equipamentos:**
+    * Destaca as ferramentas de ponta utilizadas pela empresa em um layout de cards.
+    * No desktop, os cards são exibidos em um grid responsivo.
+    * No mobile e em tablets, a seção se transforma em um **carrossel** para melhor navegação por toque.
+
+* **Seção Contato:**
+    * Layout de tela cheia no desktop com duas colunas: informações de contato à esquerda e um formulário à direita.
+    * O formulário é funcional e integrado com o serviço **Formspree**, enviando as mensagens diretamente para o e-mail do cliente e exibindo uma mensagem de sucesso na tela sem redirecionamento.
+
+* **Funcionalidades Globais:**
+    * **Botão "Voltar ao Topo":** Aparece no canto da tela após o usuário rolar a página, permitindo um retorno rápido ao início.
+    * **Otimização para SEO:** Implementação de metadados, dados estruturados (Schema.org) e boas práticas de semântica HTML.
+    * **Design Totalmente Responsivo:** O layout se adapta a desktops, tablets e celulares.
+
+## 🚀 Tecnologias e Bibliotecas
+
+* **[Next.js](https://nextjs.org/)**: Framework React para produção, com otimizações de performance e SEO.
+* **[React](https://reactjs.org/)**: Biblioteca para construção de interfaces de usuário.
+* **[TypeScript](https://www.typescriptlang.org/)**: Adiciona tipagem estática ao JavaScript.
+* **CSS Padrão:** Estilização feita com arquivos `.css` para cada componente.
+* **[Swiper.js](https://swiperjs.com/)**: Para a criação de todos os carrosséis interativos.
+* **[React Icons](https://react-icons.github.io/react-icons/)**: Para todos os ícones utilizados no projeto.
+* **[Formspree](https://formspree.io/)**: Serviço para gerenciar o envio do formulário de contato.
 
 ## 🏁 Começando
 
@@ -33,33 +59,37 @@ Siga estas instruções para configurar e rodar o projeto em seu ambiente de des
 
 ### Pré-requisitos
 
-* **Node.js**: Versão LTS (Long Term Support) recomendada. Você pode verificar com `node -v`.
-    * (Ex: `v18.x` ou `v20.x`)
-* **npm** ou **Yarn** (ou **pnpm**)
+* **Node.js**: Versão 18.x ou superior.
+* **npm** ou **Yarn**
 
 ### Instalação
 
 1.  **Clone o repositório:**
     ```bash
-    git clone git@github.com:JuniorMira0/i9-topografia.git
-    cd i9-topografia-landingpage
+    git clone git@github.com:seu-usuario/inove-topografia.git
+    cd inove-topografia
     ```
 
 2.  **Instale as dependências:**
     ```bash
     npm install
-    # ou
-    # yarn install
-    # ou
-    # pnpm install
     ```
+
 ### Rodando o Servidor de Desenvolvimento
 
-Para iniciar o servidor de desenvolvimento local:
-
+Para iniciar o servidor local, que se atualizará automaticamente conforme você edita os arquivos:
 ```bash
 npm run dev
-# ou
-# yarn dev
-# ou
-# pnpm dev
+
+
+Abra http://localhost:3000 no seu navegador para ver o resultado.
+
+Scripts Disponíveis
+npm run dev: Inicia o servidor de desenvolvimento.
+
+npm run build: Cria a versão de produção otimizada do site.
+
+npm run start: Inicia um servidor de produção local após o build.
+
+☁️ Deploy
+O projeto está configurado para deploy contínuo na Vercel. Qualquer push para a branch principal (main ou master) no GitHub irá automaticamente iniciar um novo deploy.
