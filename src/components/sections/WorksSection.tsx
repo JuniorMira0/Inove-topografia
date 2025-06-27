@@ -105,8 +105,8 @@ export default function WorksSection() {
           src={work.image}
           alt={work.title}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="work-card-image"
+          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, (max-width: 1279px) 33vw, 25vw"
         />
       </div>
       <div className="work-card-content">
