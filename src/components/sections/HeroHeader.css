@@ -187,43 +187,18 @@
   justify-content: center;
 }
 
-.hamburger-icon-container,
-.hamburger-icon-container::before,
-.hamburger-icon-container::after {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background-color: #ffffff !important;
-  border-radius: 2px;
-  transition: transform 0.3s ease-in-out, background-color 0.2s 0.2s ease-in-out;
-  position: relative;
-}
-
-.hamburger-icon-container::before,
-.hamburger-icon-container::after {
-  content: '';
-  position: absolute;
-  left: 0;
-}
-
-.hamburger-icon-container::before {
-  transform: translateY(-8px);
-}
-
-.hamburger-icon-container::after {
-  transform: translateY(8px);
-}
-
-.hero-header-mobileMenuButton.menu-open .hamburger-icon-container {
-  background-color: transparent;
-}
-
-.hero-header-mobileMenuButton.menu-open .hamburger-icon-container::before {
-  transform: translateY(0) rotate(45deg);
-}
-
-.hero-header-mobileMenuButton.menu-open .hamburger-icon-container::after {
-  transform: translateY(0) rotate(-45deg);
+.hero-header-mobileMenuButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1011;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #ffffff;
+    font-size: 1.5rem;
 }
 
 .hero-header-mobileNavPanel {
