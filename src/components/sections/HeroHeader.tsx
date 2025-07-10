@@ -25,11 +25,6 @@ const navLinks = [
 const desktopBackgrounds = [
   {
     type: 'image',
-    src: '/images/banner/banner-desktop-05.webp',
-    alt: 'Imagem aérea de bairro urbano com quadras e ruas, acompanhada de informações sobre regularização fundiária pelo programa Casa Legal.',
-  },
-  {
-    type: 'image',
     src: '/images/banner/banner-desktop-01.webp',
     alt: 'Drone profissional para topografia sobrevoando lavoura ao amanhecer',
   },
@@ -53,14 +48,14 @@ const desktopBackgrounds = [
     src: '/images/banner/banner-desktop-06.webp',
     alt: 'Vista aérea de área rural com mineração e vegetação, acompanhada de texto sobre georreferenciamento de imóveis rurais.',
   },
+  {
+    type: 'image',
+    src: '/images/banner/banner-desktop-05.webp',
+    alt: 'Imagem aérea de bairro urbano com quadras e ruas, acompanhada de informações sobre regularização fundiária pelo programa Casa Legal.',
+  },
 ];
 
 const mobileBackgrounds = [
-  {
-    type: 'image',
-    src: '/images/banner/banner-mobile-05.webp',
-    alt: 'Imagem aérea de bairro urbano com quadras e ruas, acompanhada de informações sobre regularização fundiária pelo programa Casa Legal.',
-  },
   {
     type: 'image',
     src: '/images/banner/banner-mobile-01.webp',
@@ -85,6 +80,11 @@ const mobileBackgrounds = [
     type: 'image',
     src: '/images/banner/banner-mobile-06.webp',
     alt: 'Vista aérea de área rural com mineração e vegetação, acompanhada de texto sobre georreferenciamento de imóveis rurais.',
+  },
+  {
+    type: 'image',
+    src: '/images/banner/banner-mobile-05.webp',
+    alt: 'Imagem aérea de bairro urbano com quadras e ruas, acompanhada de informações sobre regularização fundiária pelo programa Casa Legal.',
   },
 ];
 
