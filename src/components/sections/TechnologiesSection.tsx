@@ -36,8 +36,8 @@ const equipmentCategories = [
     src: '/images/tech/drone-rtk.webp',
     title: 'Drones (VANTs)',
     items: [
-      'DJI Phantom 4 RTK',
-      'DJI Mavic 3E',
+      'DJI Matrice 350 RTK',
+      'DJI Matrice 400',
       'Sensores para Mapeamento de Precisão',
     ],
   },
