@@ -25,7 +25,7 @@ const navLinks = [
 const desktopBackgrounds = [
   {
     type: 'image',
-    src: '/images/banner/banner-desktop-01.webp',
+    src: '/images/banner/banner-desktop-01.png',
     alt: 'Drone profissional para topografia sobrevoando lavoura ao amanhecer',
   },
   {
@@ -58,7 +58,7 @@ const desktopBackgrounds = [
 const mobileBackgrounds = [
   {
     type: 'image',
-    src: '/images/banner/banner-mobile-01.webp',
+    src: '/images/banner/banner-mobile-01.png',
     alt: 'Drone de alta precisão sobrevoando uma lavoura para mapeamento agrícola',
   },
   {
