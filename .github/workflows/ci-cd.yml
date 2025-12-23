@@ -1,6 +1,13 @@
   release:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     needs: build
+
+    on:
+      push:
+        branches: [ main ]
+      pull_request:
+        branches: ["*"]
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
