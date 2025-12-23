@@ -92,4 +92,4 @@ npm run build: Cria a versão de produção otimizada do site.
 npm run start: Inicia um servidor de produção local após o build.
 
 ☁️ Deploy
-O projeto está configurado para deploy contínuo na Vercel. Qualquer push para a branch principal (main ou master) no GitHub irá automaticamente iniciar um novo deploy.
+O projeto está configurado para deploy contínuo na Vercel. Qualquer push para a branch principal (main ou master) no GitHub irá automaticamente iniciar um novo deploy.# Test comment
